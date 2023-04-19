@@ -1,7 +1,7 @@
 # Difuzer++
 
 **Difuzer++** is a static logic bomb detector.
-It is an improved version of our previous tool *Difuzer*.
+It is an improved version of our previous tool [*Difuzer*](https://github.com/Trustworthy-Software/Difuzer).
 
 **Difuzer++** enhance the performance of *Difuzer* by taking into consideration the context of the analyzed apps. More in details, our novel approach involves utilizing multiple OCSVM models trained on sets of similar apps, as opposed to Difuzer, which utilizes a single OCSVM model trained on a set of unrelated apps.
 
