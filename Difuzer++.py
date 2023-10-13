@@ -29,7 +29,7 @@ import warnings
 warnings.filterwarnings('ignore') 
 
 # DifuzerPRO
-print("⚡ DIFUZER PRO ⚡\n")
+print("⚡ DIFUZER++ ⚡\n")
 
 import time
 start_time = time.time()
@@ -37,13 +37,13 @@ start_time = time.time()
 ####  CMD LINE ARGS
 if len(sys.argv) != 3 :
     print("⚠️  Error: Incorrect Usage")
-    print("1-approach: 'category' OR 'kmeans' OR 'lda'")
+    print("1-approach: 'category' OR 'kmeans' OR 'lda' OR 'gcata'")
     print("2-dataset :  Path to CSV file with [sha256,pkg_name,category_id,description]")
     sys.exit()
 
 ### APPROACH CHOICE 
-if sys.argv[1] not in ["category", "kmeans", "lda"]:
-    print("⚠️  Error: Invalid approach provided. Please use 'category' OR 'kmeans' OR 'lda'")
+if sys.argv[1] not in ["category", "kmeans", "lda","gcata"]:
+    print("⚠️  Error: Invalid approach provided. Please use 'category' OR 'kmeans' OR 'lda' OR 'gcata'")
     sys.exit()
 APPROACH = sys.argv[1]
 
@@ -85,6 +85,11 @@ for i, row in appsDF.iterrows():
         ldaModel    = load(MODEL_PATH + "ldaModel.joblib")
         modelID = getLdaID(vectorizer, ldaModel, row['description'])
         print("📝  LDA ID   : {}".format(modelID))
+
+    if(APPROACH == 'gcata'):
+        gcataModel = load(MODEL_PATH + "gcataModel.joblib")
+        modelID  = getGcataID(gcataModel, row['description'])
+        print("📝  G-CatA ID   : {}".format(modelID))
 
     # 2. Load the correspective Model
     try: 
