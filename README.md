@@ -46,6 +46,63 @@ In the folder named **'0_Data'**, you will come across three distinct subfolders
 * The **'dataBomb_RQ2a'** folder contains our **DataBomb** dataset, which includes a list of apps confirmed to have at least one logic bomb, as described in our previous paper *Difuzer*. One version of this dataset already consists of the Google Play CategoryID and the Description of each app. This file is readily usable as input for *Difuzer++*, without the need for any additional processing.
 * The **'manualAnalysis_RQ2b'** folder encompasses the list of new malicious apps that we analyzed in our new paper using*Difuzer++*. This folder also includes our new dataset, **DataBomb++**, which contains 51 new apps that were manually verified to have a logic bomb.
 
+## Google Play Categories
+
+Here, we provide the list of Google Play Categories utilized for our experiments:
+
+| categoryID           | category               |
+|----------------------|------------------------|
+| ART_AND_DESIGN       | Art & Design           |
+| AUTO_AND_VEHICLES    | Auto & Vehicles        |
+| BEAUTY               | Beauty                 |
+| BOOKS_AND_REFERENCE  | Books & Reference      |
+| BUSINESS             | Business               |
+| COMICS               | Comics                 |
+| COMMUNICATION        | Communication          |
+| DATING               | Dating                 |
+| EDUCATION            | Education              |
+| ENTERTAINMENT        | Entertainment          |
+| EVENTS               | Events                 |
+| FINANCE              | Finance                |
+| FOOD_AND_DRINK       | Food & Drink           |
+| GAME_ACTION          | Action                 |
+| GAME_ADVENTURE       | Adventure              |
+| GAME_ARCADE          | Arcade                 |
+| GAME_BOARD           | Board                  |
+| GAME_CARD            | Card                   |
+| GAME_CASINO          | Casino                 |
+| GAME_CASUAL          | Casual                 |
+| GAME_EDUCATIONAL     | Educational            |
+| GAME_MUSIC           | Music                  |
+| GAME_PUZZLE          | Puzzle                 |
+| GAME_RACING          | Racing                 |
+| GAME_ROLE_PLAYING    | Role Playing           |
+| GAME_SIMULATION      | Simulation             |
+| GAME_SPORTS          | Sports                 |
+| GAME_STRATEGY        | Strategy               |
+| GAME_TRIVIA          | Trivia                 |
+| GAME_WORD            | Word                   |
+| HEALTH_AND_FITNESS   | Health & Fitness       |
+| HOUSE_AND_HOME       | House & Home           |
+| LIBRARIES_AND_DEMO   | Libraries & Demo       |
+| LIFESTYLE            | Lifestyle              |
+| MAPS_AND_NAVIGATION  | Maps & Navigation      |
+| MEDICAL              | Medical                |
+| MUSIC_AND_AUDIO      | Music & Audio          |
+| NEWS_AND_MAGAZINES   | News & Magazines       |
+| PARENTING            | Parenting              |
+| PERSONALIZATION      | Personalization        |
+| PHOTOGRAPHY          | Photography            |
+| PRODUCTIVITY         | Productivity           |
+| SHOPPING             | Shopping               |
+| SOCIAL               | Social                 |
+| SPORTS               | Sports                 |
+| TOOLS                | Tools                  |
+| TRAVEL_AND_LOCAL     | Travel & Local         |
+| VIDEO_PLAYERS        | Video Players & Editors|
+| WEATHER              | Weather                |
+
+
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details
